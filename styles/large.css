@@ -1,6 +1,6 @@
 @media only screen and (min-width: 38rem){
     header, main, nav, footer{
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
     }
     
@@ -23,5 +23,24 @@
 
     .navigation a{
         border: none;
+    }
+
+    .main-content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .filters button{
+        width: 30%;
+    }
+
+    .course-grid{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .course-card{
+        width: 30%;
     }
 }

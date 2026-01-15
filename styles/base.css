@@ -1,8 +1,15 @@
-*{
+* {
     font-family: sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+:root {
+    --primary-color: #1C2A39;
+    --secondary-color: #C9A227;
+    --background-color: #F5F5F7;
+    --left-margin: 10px;
 }
 
 /**************Header*******************/
@@ -24,34 +31,34 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #277538;
+    color: var(--primary-color);
 }
 
 /*****************HAMBURGUER********************/
-.hamburguer{
+.hamburguer {
     background: none;
     border: none;
-    color: #277538;
+    color: var(--primary-color);
     font-size: 2rem;
     cursor: pointer;
 }
 
-.hamburguer::before{
+.hamburguer::before {
     content: "\2630";
-    
 }
 
-.hamburguer.show::before{
+.hamburguer.show::before {
     content: "\00D7";
 }
 
 /*****************NAVIGATION********************/
 
-.navigation{
+.navigation {
     display: none;
+    background-color: var(--background-color);
 }
 
-.navigation.show{
+.navigation.show {
     display: block;
 }
 
@@ -61,41 +68,127 @@ header span {
     padding: 0;
 }
 
-.navigation a{
+.navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #277538;
+    color: var(--primary-color);
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
 
-.navigation li.current{
+.navigation li.current {
     background-color: #eee;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     background-color: #ddd;
 }
 
-h1{
+h1 {
     margin-left: 10px;
+}
+
+/*****************MAIN********************/
+.main-content {
+    margin: var(--left-margin);
+}
+
+.main-content section {
+    background-color: var(--background-color);
+    min-height: 450px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.main-content p{
+    margin: 1rem;
+}
+
+h2 {
+    display: block;
+    background-color: #0D1B2A;
+    color: #F5F5F7;
+    padding: .5rem;
+    text-align: center;
+    font-weight: 100;
+    border-radius: 10px;
+    align-self: baseline;
+}
+
+.student-photo {
+    display: grid;
+}
+
+.student-photo img {
+    height: 350px;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-around;
+}
+
+.filters button{
+    display: block;
+    background-color: #C9A227;
+    border: solid 1px #1C2A39;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.filters button:hover {
+    cursor: pointer;
+    background-color: #b18f1f;
+}
+
+.course-grid{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.course-card{
+    display: block;
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+}
+
+.course-card.completed {
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+}
+
+#total-credits{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /*****************FOOTER********************/
 
-footer{
+footer {
     background-color: #eee;
     padding: 1rem 10px;
     text-align: center;
 }
 
 .social {
-    display: flex; 
+    display: flex;
     justify-content: center;
     column-gap: 8px;
 }
 
-.social a{
+.social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,15 +197,15 @@ footer{
     border-radius: 8px;
 }
 
-.social img{
+.social img {
     width: 22px;
     height: 22px;
 }
 
-.social a:hover{
+.social a:hover {
     background-color: #ddd;
 }
 
-.list ul li{
+.list ul li {
     display: none;
 }
