@@ -1,0 +1,133 @@
+/**************Header*******************/
+header {
+    display: grid;
+    grid-template-columns: 100px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    background-color: #1F3A5F;
+    column-gap: 8px;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #F4F4F4;
+    font-weight: 500;
+}
+
+/*****************HAMBURGUER********************/
+.hamburguer {
+    background: none;
+    border: none;
+    color:#F4F4F4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 2.35rem;
+}
+
+/*****************NAVIGATION********************/
+
+.navigation {
+    display: none;
+    background-color: var(--background-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/*****************DIRECTORY | Main********************/
+.toggle{
+    width: 200px;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: #C9A227;
+    border: #1F3A5F 1px solid;
+    font-weight: 600;
+}
+
+.toggle:hover {
+    background-color: #f0d479;
+    scale: 102%;
+}
+
+
+
+/*****************FOOTER********************/
+
+footer {
+    background-color: #1F3A5F;
+    padding: .5rem;
+    text-align: center;
+    color: #F4F4F4;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #C9A227;
+}
+
+.list ul li {
+    display: none;
+}
