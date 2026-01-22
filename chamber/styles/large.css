@@ -1,27 +1,45 @@
-@media only screen and (min-width: 38rem){
-    header, main, nav, footer{
-        max-width: 1000px;
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
         margin: 0 auto;
     }
-    
-    .hamburguer{
+
+    .hamburguer {
         display: none;
     }
 
-    header{
+    header {
         grid-template-columns: 100px auto;
     }
 
-    .navigation{
+    .navigation {
         display: block;
         border-bottom: solid 1px #ddd;
     }
 
-    .navigation ul{
+    .navigation ul {
         display: flex;
     }
 
-    .navigation a{
+    .navigation a {
         border: none;
+    }
+
+    #members {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .member-card {
+        width: 350px;
+        min-height: 255px;
     }
 }

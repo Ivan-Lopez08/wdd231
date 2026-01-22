@@ -1,0 +1,78 @@
+{
+  "companies": [
+    {
+      "name": "BAC Credomatic Honduras",
+      "addresses": [
+        "Boulevard Morazán, Tegucigalpa",
+        "Colonia Palmira, Tegucigalpa"
+      ],
+      "phone-number": "2216-1111",
+      "website": "https://www.baccredomatic.com",
+      "image": "images/bac_logo.png",
+      "membership-lvl": 3
+    },
+    {
+      "name": "Ficohsa",
+      "addresses": [
+        "Boulevard Suyapa, Tegucigalpa",
+        "Colonia Lomas del Guijarro"
+      ],
+      "phone-number": "2257-7777",
+      "website": "https://www.ficohsa.com",
+      "image": "images/ficohsa_logo.png",
+      "membership-lvl": 3
+    },
+    {
+      "name": "Grupo Intur",
+      "addresses": [
+        "Colonia San Ignacio, Tegucigalpa"
+      ],
+      "phone-number": "2239-0000",
+      "website": "https://www.intur.com",
+      "image": "images/intur_logo.jpeg",
+      "membership-lvl": 2
+    },
+    {
+      "name": "Jetstereo",
+      "addresses": [
+        "Mall Multiplaza, Tegucigalpa",
+        "City Mall, Tegucigalpa"
+      ],
+      "phone-number": "2276-0010",
+      "website": "https://www.jetstereo.com",
+      "image": "images/jetstereo_logo.png",
+      "membership-lvl": 2
+    },
+    {
+      "name": "Farmacias Kielsa",
+      "addresses": [
+        "Boulevard Morazán, Tegucigalpa",
+        "Colonia Kennedy, Tegucigalpa"
+      ],
+      "phone-number": "2240-0000",
+      "website": "https://www.kielsa.com",
+      "image": "images/kielsa_logo.png",
+      "membership-lvl": 1
+    },
+    {
+      "name": "Diunsa",
+      "addresses": [
+        "Boulevard Fuerzas Armadas, Tegucigalpa"
+      ],
+      "phone-number": "2239-2222",
+      "website": "https://www.diunsa.hn",
+      "image": "images/diunsa_logo.png",
+      "membership-lvl": 2
+    },
+    {
+      "name": "Grupo Karim’s Coffee",
+      "addresses": [
+        "Colonia Lomas del Guijarro, Tegucigalpa"
+      ],
+      "phone-number": "2235-8899",
+      "website": "https://www.karimscoffee.com",
+      "image": "images/karim_logo.jpeg",
+      "membership-lvl": 1
+    }
+  ]
+}
