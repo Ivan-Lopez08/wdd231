@@ -5,6 +5,7 @@ header {
     padding: 5px 0 5px 10px;
     border-bottom: solid 1px #ddd;
     background-color: #1F3A5F;
+    color: #F4F4F4;
     column-gap: 8px;
     align-items: center;
 }
